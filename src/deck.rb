@@ -11,7 +11,7 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
   background color: :white
   use_layout file: 'layouts/deck.yml'
 
-  svg file: 'stat_card_bkg001.svg', width: width, height: height
+  svg file: 'stat_card_bkg.svg', width: width, height: height
 
 
   text str: data.creature, layout: :creature
@@ -134,12 +134,12 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
   build(:pnp) do
     save_sheet prefix: 'pnp_sheet_',
                trim: '0.125in',
-               rows: 3, columns: 3
+               columns: 3, rows: 3
   end
 
   build(:tts) do
 	save_sheet prefix: 'tts_sheet_',
-	           rows: 10, columns: 7
+	           columns: 10, rows: 7
   end
 
 end
