@@ -12,7 +12,7 @@ desc 'Build everything, with all the options'
 task all: [:with_pnp, :with_proofs, :deck]
 
 desc 'Build for Tabletop Simulator'
-task tts: [:with_tts, :with_proofs, :deck]
+task tts: [:with_tts, :deck]
 
 desc 'Build the deck'
 task(:deck)     { load 'src/deck.rb' }

@@ -27,17 +27,32 @@ action:
   ellipsize: false
 
 element:
-  extends: action
   x: 20
   y: 420
   width: 156
   height: 156
 se1:
-  extends: action
-  x: 20
-  y: 420
-  width: 156
-  height: 156
+  x: 37
+  y: 318
+  width: 75
+  height: 75
+se2:
+  extends: se1
+  y: 243
+se3:
+  extends: se1
+  y: 168
+we1:
+  extends: se1
+  x: 206
+  y: 487
+we2:
+  extends: we1
+  x: 281
+we3:
+  extends: we2
+  x: 356
+
 skill:
   extends: action
   x: 25
