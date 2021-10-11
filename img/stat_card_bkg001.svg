@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2in" height="2in" viewBox="0 0 144 144">
+  <rect x="9" y="9" width="126" height="126" rx="11.342" fill="#c7b299" stroke="#000" stroke-miterlimit="10"/>
+  <g>
+    <rect x="58.5" y="4.5" width="81" height="22.5" rx="11.25" fill="#544741" stroke="#000" stroke-miterlimit="10"/>
+    <rect x="47.25" y="78.75" width="18" height="94.5" rx="9" transform="translate(182.25 69.75) rotate(90)" fill="#c7b299" stroke="#000" stroke-miterlimit="10"/>
+    <rect x="9" y="40.5" width="18" height="94.5" rx="9" fill="#c7b299" stroke="#000" stroke-miterlimit="10"/>
+    <polygon points="9 94.5 9 112.5 27 112.5 27 94.5 18 99 9 94.5" fill="#231f20"/>
+    <polygon points="40.5 117 45 117 49.5 126 45 135 36 135 40.5 117" fill="#231f20"/>
+    <rect x="4.5" y="4.5" width="67.5" height="36" rx="18" fill="#544741" stroke="#000" stroke-miterlimit="10"/>
+    <rect x="4.5" y="99" width="40.5" height="40.5" rx="20.25" fill="#c7b299" stroke="#000" stroke-miterlimit="10"/>
+    <path d="M121.5,31.5H81a9,9,0,0,0-9,9V45H40.5a9,9,0,0,0-9,9V90a9,9,0,0,0,9,9H45v4.5a9,9,0,0,0,9,9H90a9,9,0,0,0,9-9V99h22.5a9,9,0,0,0,9-9V40.5A9,9,0,0,0,121.5,31.5Z" stroke="#000" stroke-miterlimit="10"/>
+    <path d="M54,9l13.475,5.192S68.7,36,54,36,40.525,14.192,40.525,14.192Z" fill="#f2f2f3" stroke="#000" stroke-miterlimit="10"/>
+    <rect x="9" y="9" width="27" height="27" rx="13.5" fill="#f2f2f3" stroke="#000" stroke-miterlimit="10"/>
+  </g>
+</svg>

@@ -1,36 +1,50 @@
 creature:
-  x: 190
-  y: 410
-  width: 220
+  x: 206
+  y: 393
+  width: 187
   height: 60
   font: Arial 8
   valign: middle
-  align: center
+  align: left
+  color: white
   ellipsize: false
 
 name:
   extends: creature
   x: 300
-  y: 130
+  y: 131
   width: 243
-  height: 60
+  height: 75
+  align: center
 
 action:
-  extends: name
-  x: 135
-  y: 190
-  width: 400
-  height: 217
-  font: Arial 14
-  valign: middle
+  x: 337
+  y: 206
+  width: 187
+  height: 187
+
+creature_image:
+  extends: action
+  x: 150
+
+element_text:
+  extends: action
+  x: 18
+  y: 468
+  width: 168
+  height: 56
+  font: Arial bold 10
   align: center
-  ellipsize: false
+  valign: middle
+  color: white
+  stroke_width: 2.0
+  stroke_color: black
 
 element:
-  x: 20
-  y: 420
-  width: 156
-  height: 156
+  x: 18
+  y: 412
+  width: 168
+  height: 168
 se1:
   x: 37
   y: 318
@@ -53,12 +67,6 @@ we3:
   extends: we2
   x: 356
 
-skill:
-  extends: action
-  x: 25
-  y: 25
-  width: 140
-  height: 140
 loot:
   x: 300
   y: 20
@@ -66,20 +74,32 @@ loot:
   height: 90
   align: right
   extends: name
+
 luck:
   extends: action
-  x: 430
-  y: 430
-  width: 146
-  height: 160
+  x: 431
+  y: 431
+  width: 150
+  height: 150
 
+  
+skill:
+  x: 18
+  y: 19
+  width: 150
+  height: 150
+  # x: 37
+  # y: 37
+  # width: 112
+  # height: 112
+  
 defense:
   x: 170
   y: 40
   width: 107
   height: 107
   font: Arial 20
-  color: white
+  color: black
   valign: middle
   align: center
   ellipsize: false
