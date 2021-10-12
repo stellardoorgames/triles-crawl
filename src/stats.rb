@@ -9,7 +9,7 @@ height = '2 in'
 
 Squib::Deck.new(cards: data.nrows, width: width, height: height) do
   background color: :white
-  use_layout file: 'layouts/deck.yml'
+  use_layout file: 'layouts/stats.yml'
 
   svg file: 'stat_card_bkg.svg', width: width, height: height
 
@@ -132,13 +132,14 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
   save format: :png
 
   build(:pnp) do
-    save_sheet prefix: 'pnp_sheet_',
+    save_sheet prefix: 'pnp_stats_',
                trim: '0.125in',
                columns: 3, rows: 3
   end
 
   build(:tts) do
-	save_sheet prefix: 'tts_sheet_',
+	save_sheet prefix: 'tts_stats_',
+			   trim: 0,
 	           columns: 10, rows: 7
   end
 

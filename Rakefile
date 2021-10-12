@@ -5,17 +5,17 @@ require 'rake/clean'
 # Add Rake's clean & clobber tasks
 CLEAN.include('_output/*').exclude('_output/gitkeep.txt')
 
-desc 'By default, just build the deck without extra options'
-task default: [:deck]
+desc 'By default, just build the decks without extra options'
+task default: [:stats]
 
 desc 'Build everything, with all the options'
-task all: [:with_pnp, :with_proofs, :deck]
+task all: [:with_pnp, :with_tts, :with_proofs, :stats]
 
 desc 'Build for Tabletop Simulator'
-task tts: [:with_tts, :deck]
+task tts: [:with_tts, :stats]
 
-desc 'Build the deck'
-task(:deck)     { load 'src/deck.rb' }
+desc 'Build the Stats deck'
+task(:stats)     { load 'src/stats.rb' }
 
 desc 'Enable proof lines'
 task(:with_proofs) do
