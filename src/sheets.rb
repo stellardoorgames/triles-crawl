@@ -1,5 +1,5 @@
 module Sheets
-	Actions = 0
+	Stats = 0
 	Equipment = 1
 	Ground = 2
 	Classes = 3

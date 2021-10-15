@@ -2,7 +2,7 @@ require 'squib'
 require_relative 'version'
 require_relative 'sheets'
 
-data = Squib.xlsx file: 'data/game.xlsx', sheet: Sheets::Actions
+data = Squib.xlsx file: 'data/game.xlsx', sheet: Sheets::Stats
 
 width = '2 in'
 height = '2 in'
@@ -15,16 +15,16 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
 
 
   text str: data.creature, layout: :creature
-  svg file: data.image.select{ |c| c != nil }.map{ |s| s.downcase << ".svg"}, layout: :creature_image
+  svg file: data.image.select{ |c| c != nil }.map{ |s| s += ".svg"}, layout: :creature_image
 
   text str: data.name, layout: :name
 
-  svg file: data.action.select{ |c| c != nil }.map{ |s| s << ".svg"}, layout: :action
+  svg file: data.action.select{ |c| c != nil }.map{ |s| s += ".svg"}, layout: :action
   
   text str: data.def, layout: :defense
   
-  svg file: data.skill.select{ |c| c != nil }.map{ |s| s << ".svg" }, layout: :skill
-
+  svg file: data.skill.select{ |c| c != nil }.map{ |s| s += ".svg" }, layout: :skill
+  
   text str: data.loot, layout: :loot do |embed|
 	embed.svg key: '[coin]', file: 'img/coin.svg', layout: :embedded_small
 	embed.svg key: '[gem]', file: 'img/gem.svg', layout: :embedded_small
