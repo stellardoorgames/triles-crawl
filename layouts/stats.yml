@@ -32,7 +32,7 @@ element_text:
   extends: action
   x: 187
   y: 431
-  width: 187
+  width: 220
   height: 56
   font: Arial bold 10
   align: left
@@ -129,5 +129,5 @@ embedded_xsmall:
 
 version:
   font: Arial 6
-  x: 725
-  y: 45
+  x: 10
+  y: 10

@@ -1,7 +1,6 @@
 module Sheets
 	Stats = 0
 	Equipment = 1
-	Ground = 2
-	Classes = 3
-	Chits = 4
+	Classes = 2
+	Chits = 3
 end

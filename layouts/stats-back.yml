@@ -1,0 +1,10 @@
+back:
+  x: 50
+  y: 50
+  width: deck - 50
+  height: deck - 50
+  
+version:
+  font: Arial 6
+  x: 725
+  y: 45

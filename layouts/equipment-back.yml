@@ -1,0 +1,22 @@
+name:
+  x: 131
+  y: 187
+  width: 787
+  height: 75
+  font: Arial 11
+  align: right
+  valign: middle
+  color: white
+  ellipsize: false
+
+level:
+  extends: name
+  x: 900
+  y: 56
+  width: 93
+  height: 93
+
+version:
+  font: Arial 6
+  x: 10
+  y: 10

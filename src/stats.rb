@@ -15,9 +15,9 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
 
 
   text str: data.creature, layout: :creature
-  svg file: data.image.map{ |s| s += ".svg"}, layout: :creature_image
+  svg file: data.image.map{ |s| if (s != nil) then s += ".svg" end }, layout: :creature_image
 
-  svg file: data.action.map{ |s| if (s != nil) then s += ".svg" end}, layout: :action
+  svg file: data.action.map{ |s| if (s != nil) then s += ".svg" end }, layout: :action
 	
   text str: data.name, layout: :name
   
@@ -133,7 +133,7 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
     cut_zone
   end
 
-  save format: :png
+  save format: :png, prefix: 'stats_'
 
   build(:pnp) do
     save_sheet prefix: 'pnp_stats_',
