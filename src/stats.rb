@@ -15,24 +15,28 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
 
 
   text str: data.creature, layout: :creature
-  svg file: data.image.select{ |c| c != nil }.map{ |s| s += ".svg"}, layout: :creature_image
+  svg file: data.image.map{ |s| s += ".svg"}, layout: :creature_image
 
+  svg file: data.action.map{ |s| if (s != nil) then s += ".svg" end}, layout: :action
+	
   text str: data.name, layout: :name
-
-  svg file: data.action.select{ |c| c != nil }.map{ |s| s += ".svg"}, layout: :action
   
   text str: data.def, layout: :defense
   
-  svg file: data.skill.select{ |c| c != nil }.map{ |s| s += ".svg" }, layout: :skill
+  svg file: data.skill.map{ |s| if (s != nil) then s += ".svg" end }, layout: :skill
+
+  text str: data.text, layout: :text do |embed|
+	embed.svg key: '[luck]', file: 'img/luck.svg', layout: :embedded_xsmall
+  end
   
   text str: data.loot, layout: :loot do |embed|
 	embed.svg key: '[coin]', file: 'img/coin.svg', layout: :embedded_small
 	embed.svg key: '[gem]', file: 'img/gem.svg', layout: :embedded_small
   end
 
-  svg file: data.luck.map{ |s| "die#{s}.svg" }, layout: :luck
+  svg file: data.luck.map{ |s| if (s != nil) then "die#{s}.svg" end }, layout: :luck
 
-
+  
   # Air Element
   element = data.element.each_index.select { |i| data.element[i] == "Air"}
   svg range:element, file:'air.svg', layout: :element
@@ -118,7 +122,7 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
   svg range:element, file:'metal.svg', layout: :we2
   svg range:element, file:'beast.svg', layout: :we3
   
-  text str: data.element, layout: :element_text
+  text str: data.element.map { |s| s  = "- " + s}, layout: :element_text
 
   
 
