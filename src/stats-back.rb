@@ -34,8 +34,8 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
   build(:tts) do
 	save_sheet prefix: 'tts_stats_back_',
 			   trim: 0,
-	           columns: 10, rows: 7,
-			   rtl: true
+	           columns: 10, rows: 7
+			   #rtl: true
   end
 
 end
