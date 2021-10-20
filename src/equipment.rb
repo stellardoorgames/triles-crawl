@@ -53,12 +53,12 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
    end
 
    text str: data.hold, layout: :hold do |embed|
-	embed.svg key: '[str]', file: 'img/str.svg', layout: :embedded
-	embed.svg key: '[dex]', file: 'img/dex.svg', layout: :embedded
-	embed.svg key: '[agl]', file: 'img/agl.svg', layout: :embedded
-	embed.svg key: '[int]', file: 'img/int.svg', layout: :embedded
-	embed.svg key: '[per]', file: 'img/per.svg', layout: :embedded
-	embed.svg key: '[vit]', file: 'img/vit.svg', layout: :embedded
+	embed.svg key: '[str]',  file: 'img/str.svg',  layout: :embedded
+	embed.svg key: '[dex]',  file: 'img/dex.svg',  layout: :embedded
+	embed.svg key: '[agl]',  file: 'img/agl.svg',  layout: :embedded
+	embed.svg key: '[int]',  file: 'img/int.svg',  layout: :embedded
+	embed.svg key: '[per]',  file: 'img/per.svg',  layout: :embedded
+	embed.svg key: '[vit]',  file: 'img/vit.svg',  layout: :embedded
 	embed.svg key: '[strt]', file: 'img/strt.svg', layout: :embedded
 	embed.svg key: '[dext]', file: 'img/dext.svg', layout: :embedded
 	embed.svg key: '[aglt]', file: 'img/aglt.svg', layout: :embedded
