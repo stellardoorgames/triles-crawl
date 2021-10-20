@@ -25,12 +25,12 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
 		embed.svg key: '[int]',   file: 'img/int.svg',       layout: :embedded_xsmall
 		embed.svg key: '[per]',   file: 'img/per.svg',       layout: :embedded_xsmall
 		embed.svg key: '[vit]',   file: 'img/vit.svg',       layout: :embedded_xsmall
-		embed.svg key: '[strt]',   file: 'img/strt.svg',       layout: :embedded_xsmall
-		embed.svg key: '[dext]',   file: 'img/dext.svg',       layout: :embedded_xsmall
-		embed.svg key: '[aglt]',   file: 'img/aglt.svg',       layout: :embedded_xsmall
-		embed.svg key: '[intt]',   file: 'img/intt.svg',       layout: :embedded_xsmall
-		embed.svg key: '[pert]',   file: 'img/pert.svg',       layout: :embedded_xsmall
-		embed.svg key: '[vitt]',   file: 'img/vitt.svg',       layout: :embedded_xsmall
+		embed.svg key: '[strt]',  file: 'img/strt.svg',      layout: :embedded_xsmall
+		embed.svg key: '[dext]',  file: 'img/dext.svg',      layout: :embedded_xsmall
+		embed.svg key: '[aglt]',  file: 'img/aglt.svg',      layout: :embedded_xsmall
+		embed.svg key: '[intt]',  file: 'img/intt.svg',      layout: :embedded_xsmall
+		embed.svg key: '[pert]',  file: 'img/pert.svg',      layout: :embedded_xsmall
+		embed.svg key: '[vitt]',  file: 'img/vitt.svg',      layout: :embedded_xsmall
 		embed.svg key: '[A]',     file: 'img/air.svg',       layout: :embedded_xsmall
 		embed.svg key: '[E]',     file: 'img/earth.svg',     layout: :embedded_xsmall
 		embed.svg key: '[P]',     file: 'img/plant.svg',     layout: :embedded_xsmall
