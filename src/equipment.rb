@@ -25,6 +25,12 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
 		embed.svg key: '[int]',   file: 'img/int.svg',       layout: :embedded_xsmall
 		embed.svg key: '[per]',   file: 'img/per.svg',       layout: :embedded_xsmall
 		embed.svg key: '[vit]',   file: 'img/vit.svg',       layout: :embedded_xsmall
+		embed.svg key: '[strt]',   file: 'img/strt.svg',       layout: :embedded_xsmall
+		embed.svg key: '[dext]',   file: 'img/dext.svg',       layout: :embedded_xsmall
+		embed.svg key: '[aglt]',   file: 'img/aglt.svg',       layout: :embedded_xsmall
+		embed.svg key: '[intt]',   file: 'img/intt.svg',       layout: :embedded_xsmall
+		embed.svg key: '[pert]',   file: 'img/pert.svg',       layout: :embedded_xsmall
+		embed.svg key: '[vitt]',   file: 'img/vitt.svg',       layout: :embedded_xsmall
 		embed.svg key: '[A]',     file: 'img/air.svg',       layout: :embedded_xsmall
 		embed.svg key: '[E]',     file: 'img/earth.svg',     layout: :embedded_xsmall
 		embed.svg key: '[P]',     file: 'img/plant.svg',     layout: :embedded_xsmall
@@ -53,6 +59,12 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
 	embed.svg key: '[int]', file: 'img/int.svg', layout: :embedded
 	embed.svg key: '[per]', file: 'img/per.svg', layout: :embedded
 	embed.svg key: '[vit]', file: 'img/vit.svg', layout: :embedded
+	embed.svg key: '[strt]', file: 'img/strt.svg', layout: :embedded
+	embed.svg key: '[dext]', file: 'img/dext.svg', layout: :embedded
+	embed.svg key: '[aglt]', file: 'img/aglt.svg', layout: :embedded
+	embed.svg key: '[intt]', file: 'img/intt.svg', layout: :embedded
+	embed.svg key: '[pert]', file: 'img/pert.svg', layout: :embedded
+	embed.svg key: '[vitt]', file: 'img/vitt.svg', layout: :embedded
    end
 
    text str: data.level, layout: :level
@@ -165,7 +177,7 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
   build(:tts) do
 	save_sheet prefix: 'tts_equipment_',
 			   trim: 0,
-	           columns: 10, rows: 7
+	           columns: 7, rows: 7
   end
 
 end

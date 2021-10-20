@@ -14,6 +14,9 @@ task all: [:with_pnp, :with_tts, :with_proofs, :stats, :stats_back, :equipment, 
 desc 'Build for Tabletop Simulator'
 task tts: [:with_tts, :stats, :stats_back, :equipment, :equipment_back]
 
+desc 'Build Equipment for TTS'
+task tts_equipment: [:with_tts, :equipment, :equipment_back]
+
 desc 'Build the Stats deck'
 task(:stats)          { load 'src/stats.rb' }
 desc 'Build the Stats backs'

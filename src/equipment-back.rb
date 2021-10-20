@@ -35,7 +35,7 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
   build(:tts) do
 	save_sheet prefix: 'tts_equipment_back_',
 			   trim: 0,
-	           columns: 10, rows: 7,
+	           columns: 7, rows: 7,
 			   rtl: true
   end
 
