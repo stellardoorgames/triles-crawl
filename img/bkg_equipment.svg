@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3.5in" height="2.5in" viewBox="0 0 252 180">
+  <rect x="9" y="9" width="234" height="162" rx="9.785" fill="#c7b299" stroke="#000" stroke-miterlimit="10"/>
+  <rect x="117" y="45" width="18" height="234" rx="9" transform="translate(288 36) rotate(90)" fill="#736357" stroke="#000" stroke-miterlimit="10"/>
+  <rect x="78.75" y="-15.75" width="94.5" height="216" rx="9" transform="translate(218.25 -33.75) rotate(90)" stroke="#000" stroke-miterlimit="10"/>
+  <rect x="110.25" y="-92.25" width="31.5" height="234" rx="9" transform="translate(150.75 -101.25) rotate(90)" fill="#736357" stroke="#000" stroke-miterlimit="10"/>
+  <rect x="47.25" y="114.75" width="18" height="94.5" rx="9" transform="translate(218.25 105.75) rotate(90)" fill="#c7b299" stroke="#000" stroke-miterlimit="10"/>
+  <rect x="9" y="76.5" width="18" height="94.5" rx="9" fill="#c7b299" stroke="#000" stroke-miterlimit="10"/>
+  <polygon points="9 130.5 9 148.5 27 148.5 27 130.5 18 135 9 130.5" fill="#231f20"/>
+  <polygon points="40.5 153 45 153 49.5 162 45 171 36 171 40.5 153" fill="#231f20"/>
+  <rect x="4.5" y="135" width="40.5" height="40.5" rx="20.25" fill="#c7b299" stroke="#000" stroke-miterlimit="10"/>
+</svg>

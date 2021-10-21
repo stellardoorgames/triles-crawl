@@ -11,7 +11,7 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
   background color: :white
   use_layout file: 'layouts/stats.yml'
 
-  svg file: 'stat_card_bkg.svg', width: width, height: height
+  svg file: 'bkg_stats.svg', width: width, height: height
 
 
   text str: data.creature, layout: :creature
@@ -23,7 +23,7 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
   
   text str: data.def, layout: :defense
   
-  svg file: data.skill.map{ |s| if (s != nil) then s += ".svg" end }, layout: :skill
+  svg file: data.skill.map{ |s| if (s != nil) then s += "i.svg" end }, layout: :skill
 
   text str: data.text, layout: :text do |embed|
 	embed.svg key: '[luck]', file: 'img/luck.svg', layout: :embedded_xsmall

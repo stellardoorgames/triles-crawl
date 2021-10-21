@@ -11,63 +11,63 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
   background color: :white
   use_layout file: 'layouts/equipment.yml'
 
-  svg file: 'equipment_card_bkg.svg', width: width, height: height
+  svg file: 'bkg_equipment.svg', width: width, height: height
 
-   text str: data.name, layout: :name
+  text str: data.name, layout: :name
 
-   text str: data.text, layout: :text do |embed|
-		embed.svg key: '[luck]',  file: 'img/luck.svg',      layout: :embedded_xsmall
-		embed.svg key: '[coin]',  file: 'img/coin.svg',      layout: :embedded_xsmall
-		embed.svg key: '[gem]',   file: 'img/gem.svg',       layout: :embedded_xsmall
-		embed.svg key: '[str]',   file: 'img/str.svg',       layout: :embedded_xsmall
-		embed.svg key: '[dex]',   file: 'img/dex.svg',       layout: :embedded_xsmall
-		embed.svg key: '[agl]',   file: 'img/agl.svg',       layout: :embedded_xsmall
-		embed.svg key: '[int]',   file: 'img/int.svg',       layout: :embedded_xsmall
-		embed.svg key: '[per]',   file: 'img/per.svg',       layout: :embedded_xsmall
-		embed.svg key: '[vit]',   file: 'img/vit.svg',       layout: :embedded_xsmall
-		embed.svg key: '[strt]',  file: 'img/strt.svg',      layout: :embedded_xsmall
-		embed.svg key: '[dext]',  file: 'img/dext.svg',      layout: :embedded_xsmall
-		embed.svg key: '[aglt]',  file: 'img/aglt.svg',      layout: :embedded_xsmall
-		embed.svg key: '[intt]',  file: 'img/intt.svg',      layout: :embedded_xsmall
-		embed.svg key: '[pert]',  file: 'img/pert.svg',      layout: :embedded_xsmall
-		embed.svg key: '[vitt]',  file: 'img/vitt.svg',      layout: :embedded_xsmall
-		embed.svg key: '[A]',     file: 'img/air.svg',       layout: :embedded_xsmall
-		embed.svg key: '[E]',     file: 'img/earth.svg',     layout: :embedded_xsmall
-		embed.svg key: '[P]',     file: 'img/plant.svg',     layout: :embedded_xsmall
-		embed.svg key: '[M]',     file: 'img/metal.svg',     layout: :embedded_xsmall
-		embed.svg key: '[F]',     file: 'img/fire.svg',      layout: :embedded_xsmall
-		embed.svg key: '[W]',     file: 'img/water.svg',     layout: :embedded_xsmall
-		embed.svg key: '[I]',     file: 'img/ice.svg',       layout: :embedded_xsmall
-		embed.svg key: '[L]',     file: 'img/lightning.svg', layout: :embedded_xsmall
-		embed.svg key: '[B]',     file: 'img/beast.svg',     layout: :embedded_xsmall
-		embed.svg key: '[D]',     file: 'img/demon.svg',     layout: :embedded_xsmall
-		embed.svg key: '[U]',     file: 'img/undead.svg',    layout: :embedded_xsmall
-		embed.svg key: '[S]',     file: 'img/spirit.svg',    layout: :embedded_xsmall
-		embed.svg key: '[arrow]', file: 'img/arrow.svg',     layout: :embedded_xsmall
-   end
+  text str: data.text, layout: :text do |embed|
+	embed.svg key: '[luck]',  file: 'img/luck.svg',      layout: :embedded_xsmall
+	embed.svg key: '[coin]',  file: 'img/coin.svg',      layout: :embedded_xsmall
+	embed.svg key: '[gem]',   file: 'img/gem.svg',       layout: :embedded_xsmall
+	embed.svg key: '[str]',   file: 'img/str.svg',       layout: :embedded_xsmall
+	embed.svg key: '[dex]',   file: 'img/dex.svg',       layout: :embedded_xsmall
+	embed.svg key: '[agl]',   file: 'img/agl.svg',       layout: :embedded_xsmall
+	embed.svg key: '[int]',   file: 'img/int.svg',       layout: :embedded_xsmall
+	embed.svg key: '[per]',   file: 'img/per.svg',       layout: :embedded_xsmall
+	embed.svg key: '[vit]',   file: 'img/vit.svg',       layout: :embedded_xsmall
+	embed.svg key: '[stri]',  file: 'img/stri.svg',      layout: :embedded_xsmall
+	embed.svg key: '[dexi]',  file: 'img/dexi.svg',      layout: :embedded_xsmall
+	embed.svg key: '[agli]',  file: 'img/agli.svg',      layout: :embedded_xsmall
+	embed.svg key: '[inti]',  file: 'img/inti.svg',      layout: :embedded_xsmall
+	embed.svg key: '[peri]',  file: 'img/peri.svg',      layout: :embedded_xsmall
+	embed.svg key: '[viti]',  file: 'img/viti.svg',      layout: :embedded_xsmall
+	embed.svg key: '[A]',     file: 'img/air.svg',       layout: :embedded_xsmall
+	embed.svg key: '[E]',     file: 'img/earth.svg',     layout: :embedded_xsmall
+	embed.svg key: '[P]',     file: 'img/plant.svg',     layout: :embedded_xsmall
+	embed.svg key: '[M]',     file: 'img/metal.svg',     layout: :embedded_xsmall
+	embed.svg key: '[F]',     file: 'img/fire.svg',      layout: :embedded_xsmall
+	embed.svg key: '[W]',     file: 'img/water.svg',     layout: :embedded_xsmall
+	embed.svg key: '[I]',     file: 'img/ice.svg',       layout: :embedded_xsmall
+	embed.svg key: '[L]',     file: 'img/lightning.svg', layout: :embedded_xsmall
+	embed.svg key: '[B]',     file: 'img/beast.svg',     layout: :embedded_xsmall
+	embed.svg key: '[D]',     file: 'img/demon.svg',     layout: :embedded_xsmall
+	embed.svg key: '[U]',     file: 'img/undead.svg',    layout: :embedded_xsmall
+	embed.svg key: '[S]',     file: 'img/spirit.svg',    layout: :embedded_xsmall
+	embed.svg key: '[arrow]', file: 'img/arrow.svg',     layout: :embedded_xsmall
+  end
   
-   #text str: data.buy.map{ |s| if (s != nil) then s = "Cost: " + s end }, layout: :buy do |embed|
-   text str: data.buy, layout: :buy do |embed|
- 	embed.svg key: '[coin]', file: 'img/coin.svg', layout: :embedded_small
- 	embed.svg key: '[gem]',  file: 'img/gem.svg',  layout: :embedded_small
-   end
+  #text str: data.buy.map{ |s| if (s != nil) then s = "Cost: " + s end }, layout: :buy do |embed|
+  text str: data.buy, layout: :buy do |embed|
+	embed.svg key: '[coin]', file: 'img/coin.svg', layout: :embedded_small
+	embed.svg key: '[gem]',  file: 'img/gem.svg',  layout: :embedded_small
+  end
 
-   text str: data.hold, layout: :hold do |embed|
+  text str: data.hold, layout: :hold do |embed|
 	embed.svg key: '[str]',  file: 'img/str.svg',  layout: :embedded
 	embed.svg key: '[dex]',  file: 'img/dex.svg',  layout: :embedded
 	embed.svg key: '[agl]',  file: 'img/agl.svg',  layout: :embedded
 	embed.svg key: '[int]',  file: 'img/int.svg',  layout: :embedded
 	embed.svg key: '[per]',  file: 'img/per.svg',  layout: :embedded
 	embed.svg key: '[vit]',  file: 'img/vit.svg',  layout: :embedded
-	embed.svg key: '[strt]', file: 'img/strt.svg', layout: :embedded
-	embed.svg key: '[dext]', file: 'img/dext.svg', layout: :embedded
-	embed.svg key: '[aglt]', file: 'img/aglt.svg', layout: :embedded
-	embed.svg key: '[intt]', file: 'img/intt.svg', layout: :embedded
-	embed.svg key: '[pert]', file: 'img/pert.svg', layout: :embedded
-	embed.svg key: '[vitt]', file: 'img/vitt.svg', layout: :embedded
-   end
+	embed.svg key: '[stri]', file: 'img/stri.svg', layout: :embedded
+	embed.svg key: '[dexi]', file: 'img/dexi.svg', layout: :embedded
+	embed.svg key: '[agli]', file: 'img/agli.svg', layout: :embedded
+	embed.svg key: '[inti]', file: 'img/inti.svg', layout: :embedded
+	embed.svg key: '[peri]', file: 'img/peri.svg', layout: :embedded
+	embed.svg key: '[viti]', file: 'img/viti.svg', layout: :embedded
+  end
 
-   text str: data.level, layout: :level
+  text str: data.level, layout: :level
 
   
   # Air Element

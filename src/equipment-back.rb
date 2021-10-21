@@ -11,7 +11,7 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
   background color: :white
   use_layout file: 'layouts/equipment-back.yml'
 
-  svg file: 'equipment_card_back.svg', width: width, height: height
+  svg file: 'back_equipment.svg', width: width, height: height
 
   
   text str: data.level, layout: :level
