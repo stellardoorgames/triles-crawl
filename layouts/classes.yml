@@ -1,0 +1,79 @@
+name:
+  x: 112
+  y: 112
+  width: 656
+  height: 131
+  font: Arial 25
+  align: center
+  valign: middle
+  color: white
+  ellipsize: false
+
+starting_tokens:
+  extends: name
+  x: 150
+  y: 300
+  width: 600
+  height: 150
+  font_size: 16
+  valign: top
+  color: black
+
+starting_vitality:
+  extends: name
+  x: 150
+  y: 600
+  width: 525
+  height: 525
+  color: black
+
+ability1:
+  extends: name
+  x: 1575
+  y: 225
+  width: 1500
+  height: 112
+  font_size: 12
+  align: left
+  color: white
+ability2:
+  extends: ability1
+  y: += 150
+ability3:
+  extends: ability2
+  y: += 150
+ability4:
+  extends: ability3
+  y: += 150
+shared_ability1:
+  extends: ability4
+  y: += 150
+shared_ability2:
+  extends: shared_ability1
+  y: += 150
+
+embedded:
+  height: 93
+  width: 93
+  align: center
+  valign: middle
+
+embedded_small:
+  extends: embedded
+  height: 75
+  width: 75
+  
+embedded_big:
+  extends: embedded
+  height: 200
+  width: 200
+
+embedded_xsmall:
+  extends: embedded
+  width: 55
+  height: 55
+
+version:
+  font: Arial 6
+  x: 10
+  y: 10
