@@ -231,7 +231,7 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
   build(:tts) do
 	save_sheet prefix: 'tts_classes_',
 			   trim: 0,
-	           columns: 1, rows: 3
+	           columns: 2, rows: 2
   end
 
 end
