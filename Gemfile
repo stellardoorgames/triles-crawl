@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'squib'
+# gem 'squib'
+gem 'squib', git: 'git://github.com/andymeneely/squib', ref: 'd385e20'
 gem 'guard'
 gem 'guard-rake'
 

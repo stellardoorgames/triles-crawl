@@ -2,6 +2,8 @@ require 'squib'
 require_relative 'version'
 require_relative 'sheets'
 
+puts Squib::VERSION # prints the Squib version to the console when you run this code
+
 data = Squib.xlsx file: 'data/game.xlsx', sheet: Sheets::Classes
 
 width = '10.75 in'

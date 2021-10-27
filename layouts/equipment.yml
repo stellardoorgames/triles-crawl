@@ -92,6 +92,7 @@ embedded_small:
   extends: embedded
   height: 75
   width: 75
+  #dy: -10
   
 embedded_big:
   extends: embedded

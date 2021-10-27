@@ -14,12 +14,12 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
   svg file: 'bkg_stats.svg', width: width, height: height
 
 
-  text str: data.creature, layout: :creature
-  svg file: data.image.map{ |s| if (s != nil) then s += ".svg" end }, layout: :creature_image
+  text str: data.action1, layout: :creature
+  svg file: data.action1img.map{ |s| if (s != nil) then s += ".svg" end }, layout: :creature_image
 
-  svg file: data.action.map{ |s| if (s != nil) then s += ".svg" end }, layout: :action
+  svg file: data.action2img.map{ |s| if (s != nil) then s += ".svg" end }, layout: :action
 	
-  text str: data.name, layout: :name
+  text str: data.action2, layout: :name
   
   text str: data.def, layout: :defense
   

@@ -1,3 +1,22 @@
+GIT
+  remote: git://github.com/andymeneely/squib
+  revision: d385e205a512478c8c327e01e075274ab9fe7098
+  ref: d385e20
+  specs:
+    squib (0.18.0a)
+      cairo (~> 1.17)
+      classy_hash (= 1.0.0)
+      gio2 (~> 3.4)
+      gobject-introspection (~> 3.4)
+      highline (= 2.0.3)
+      mercenary (= 0.4.0)
+      nokogiri (~> 1.11)
+      pango (~> 3.4)
+      rainbow (~> 3.0)
+      roo (~> 2.8)
+      rsvg2 (~> 3.4)
+      ruby-progressbar (~> 1.11)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -55,7 +74,7 @@ GEM
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
-    racc (1.5.2)
+    racc (1.6.0)
     rainbow (3.0.0)
     rake (13.0.6)
     rb-fsevent (0.11.0)
@@ -72,19 +91,6 @@ GEM
     ruby-progressbar (1.11.0)
     rubyzip (2.3.2)
     shellany (0.0.1)
-    squib (0.17.2)
-      cairo (~> 1.17)
-      classy_hash (= 1.0.0)
-      gio2 (~> 3.4)
-      gobject-introspection (~> 3.4)
-      highline (= 2.0.3)
-      mercenary (= 0.4.0)
-      nokogiri (~> 1.11)
-      pango (~> 3.4)
-      rainbow (~> 3.0)
-      roo (~> 2.8)
-      rsvg2 (~> 3.4)
-      ruby-progressbar (~> 1.11)
     thor (1.1.0)
 
 PLATFORMS
@@ -93,7 +99,7 @@ PLATFORMS
 DEPENDENCIES
   guard
   guard-rake
-  squib
+  squib!
 
 BUNDLED WITH
    2.2.22
