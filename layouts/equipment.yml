@@ -1,9 +1,9 @@
 name:
-  x: 131
-  y: 187
-  width: 787
+  x: 75
+  y: 56
+  width: 900
   height: 75
-  font: Arial 11
+  font: Arial 12
   align: center
   valign: middle
   color: white
@@ -11,13 +11,41 @@ name:
 
 text:
   extends: name
-  x: 150
-  y: 281
+  x: 187
+  y: 337
   width: 750
-  height: 261
+  height: 206d
   align: left
   valign: top
   
+buy:
+  extends: name
+  x: 468
+  y: 637
+  width: 506
+  height: 75
+  align: right
+
+class:
+  extends: name
+  x: 450
+  y: 637
+  width: 525
+  height: 75
+  align: left
+
+equip:
+  extends: name
+  x: 75
+  y: 168
+  width: 900
+  height: 112
+  align: left
+
+category:
+  extends: equip
+  align: right
+
 element_text:
   extends: name
   x: 187
@@ -58,29 +86,6 @@ we2:
 we3:
   extends: we2
   x: 356
-
-buy:
-  extends: name
-  x: 468
-  y: 637
-  width: 506
-  height: 75
-  align: right
-
-hold:
-  extends: name
-  x: 75
-  y: 56
-  width: 900
-  height: 93
-  align: left
-
-level:
-  extends: name
-  x: 900
-  y: 56
-  width: 93
-  height: 93
   
 embedded:
   height: 93
