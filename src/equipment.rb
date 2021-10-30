@@ -15,8 +15,21 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
 
   text str: data.name, layout: :name
 
-  text str: data.equip, layout: :equip
-  text str: data.category, layout: :category
+  text str: data.equip, layout: :equip do |embed|
+	embed.svg key: '[handr]', file: 'img/handr.svg', layout: :embedded
+	embed.svg key: '[handl]', file: 'img/handl.svg', layout: :embedded
+	embed.svg key: '[feet]',  file: 'img/feet.svg',  layout: :embedded
+  end
+
+  text str: data.category, layout: :category do |embed|
+	embed.svg key: '[blade]',       file: 'img/blade.svg',       layout: :embedded
+	embed.svg key: '[small-blade]', file: 'img/small-blade.svg', layout: :embedded
+	embed.svg key: '[bow]', 		file: 'img/bow.svg', 	 	 layout: :embedded
+	embed.svg key: '[staff]', 		file: 'img/staff.svg', 	 	 layout: :embedded
+	embed.svg key: '[blunt]', 		file: 'img/blunt.svg', 	 	 layout: :embedded
+	embed.svg key: '[shield]', 		file: 'img/shield.svg', 	 layout: :embedded
+  end
+
   text str: data.cls, layout: :class
 
   text str: data.text, layout: :text do |embed|

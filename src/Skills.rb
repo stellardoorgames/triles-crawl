@@ -18,7 +18,7 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
   text str: data.name, layout: :name
   text str: data.cls, layout: :class
 
-  text str: data.range, layout: :range
+  svg file: data.range.map{ |s| if (s != nil) then s += '.svg' end }, layout: :range
 
   text str: data.cost, layout: :cost do |embed|
 	embed.svg key: '[luck]',  file: 'img/luck.svg',      layout: :embedded_small
@@ -78,6 +78,12 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
 	embed.svg key: '[U]',     file: 'img/undead.svg',    layout: :embedded_xsmall
 	embed.svg key: '[S]',     file: 'img/spirit.svg',    layout: :embedded_xsmall
 	embed.svg key: '[arrow]', file: 'img/arrow.svg',     layout: :embedded_xsmall
+	embed.svg key: '[blade]',       file: 'img/blade.svg',       layout: :embedded_xsmall
+	embed.svg key: '[small-blade]', file: 'img/small-blade.svg', layout: :embedded_xsmall
+	embed.svg key: '[bow]', 		file: 'img/bow.svg', 	 	 layout: :embedded_xsmall
+	embed.svg key: '[staff]', 		file: 'img/staff.svg', 	 	 layout: :embedded_xsmall
+	embed.svg key: '[blunt]', 		file: 'img/blunt.svg', 	 	 layout: :embedded_xsmall
+	embed.svg key: '[shield]', 		file: 'img/shield.svg', 	 layout: :embedded_xsmall
   end
 
 

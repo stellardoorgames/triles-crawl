@@ -11,7 +11,7 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
   background color: :white
   use_layout file: 'layouts/actions.yml'
 
-  svg file: 'bkg_stats.svg', width: width, height: height
+  svg file: 'bkg_actions.svg', width: width, height: height
 
 
   text str: data.action1, layout: :creature
