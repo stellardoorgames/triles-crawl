@@ -1,0 +1,63 @@
+name:
+  x: 75
+  y: 56
+  width: 600
+  height: 75
+  font: Arial 14
+  align: center
+  valign: middle
+  color: white
+  ellipsize: false
+
+class:
+  extends: name
+  y: 918
+  font_size: 12
+  align: left
+  
+cost:
+  extends: class
+  align: right
+
+text:
+  extends: name
+  x: 112
+  y: 225
+  width: 525
+  height: 393
+  font_size: 12
+  align: left
+  valign: top
+
+range:
+  x: 281
+  y: 656
+  width: 187
+  height: 187
+  color: white
+  
+embedded:
+  height: 93
+  width: 93
+  align: center
+  valign: middle
+
+embedded_small:
+  extends: embedded
+  height: 75
+  width: 75
+  
+embedded_big:
+  extends: embedded
+  height: 200
+  width: 200
+
+embedded_xsmall:
+  extends: embedded
+  width: 55
+  height: 55
+
+version:
+  font: Arial 6
+  x: 10
+  y: 10

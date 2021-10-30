@@ -2,14 +2,14 @@ require 'squib'
 require_relative 'version'
 require_relative 'sheets'
 
-data = Squib.xlsx file: 'data/game.xlsx', sheet: Sheets::Stats
+data = Squib.xlsx file: 'data/game.xlsx', sheet: Sheets::Actions
 
 width = '2 in'
 height = '2 in'
 
 Squib::Deck.new(cards: data.nrows, width: width, height: height) do
   background color: :white
-  use_layout file: 'layouts/stats.yml'
+  use_layout file: 'layouts/actions.yml'
 
   svg file: 'bkg_stats.svg', width: width, height: height
 
@@ -133,16 +133,16 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
     cut_zone
   end
 
-  save format: :png, prefix: 'stats_'
+  save format: :png, prefix: 'actions_'
 
   build(:pnp) do
-    save_sheet prefix: 'pnp_stats_',
+    save_sheet prefix: 'pnp_actions_',
                trim: '0.125in',
                columns: 3, rows: 3
   end
 
   build(:tts) do
-	save_sheet prefix: 'tts_stats_',
+	save_sheet prefix: 'tts_actions_',
 			   trim: 0,
 	           columns: 10, rows: 7
   end

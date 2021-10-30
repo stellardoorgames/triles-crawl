@@ -1,0 +1,89 @@
+name:
+  x: 168
+  y: 150
+  width: 337
+  height: 37
+  font: Arial 8
+  align: left
+  valign: middle
+  color: white
+  ellipsize: false
+
+image:
+  x: 337
+  y: 187
+  width: 187
+  height: 187
+
+text:
+  extends: name
+  y: 375
+  align: center
+  
+element_text:
+  extends: name
+  x: 187
+  y: 431
+  width: 220
+  height: 56
+  font: Arial bold 10
+  align: left
+  valign: middle
+  color: white
+  stroke_width: 4
+  stroke_color: black
+  stroke_strategy: stroke_first
+
+element:
+  x: 18
+  y: 412
+  width: 168
+  height: 168
+se1:
+  x: 37
+  y: 318
+  width: 75
+  height: 75
+se2:
+  extends: se1
+  y: 243
+se3:
+  extends: se1
+  y: 168
+we1:
+  extends: se1
+  x: 206
+  y: 487
+we2:
+  extends: we1
+  x: 281
+we3:
+  extends: we2
+  x: 356
+
+
+embedded:
+  height: 100
+  width: 100
+  align: center
+  valign: middle
+
+embedded_small:
+  extends: embedded
+  height: 75
+  width: 75
+  
+embedded_big:
+  extends: embedded
+  height: 200
+  width: 200
+
+embedded_xsmall:
+  extends: embedded
+  width: 40
+  height: 40
+
+version:
+  font: Arial 6
+  x: 10
+  y: 10
