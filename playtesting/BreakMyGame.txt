@@ -1,0 +1,6 @@
+:x_Bullet_1:   Name of Game: Triles (working title)
+:x_Bullet_2:   Number of Players: 3
+:x_Bullet_3:   Total Time: 60 minutes
+:x_Bullet_4:   Description of Game: Cooperatie dungeon crawler
+:x_Bullet_5:   Playtesting Platform: Tabletop Simulator
+:x_Bullet_6:   Any Additional Info: An early prototype, testing out some systems
