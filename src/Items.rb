@@ -15,8 +15,8 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
 
 
   text str: data.name, layout: :name
-  #svg file: data.image.map{ |s| if (s != nil) then s += ".svg" end }, layout: :image
-  text str: data.image, layout: :image
+  svg file: data.image.map{ |s| if (s != nil) then s += ".svg" end }, layout: :image
+  #text str: data.image, layout: :image
 
   text str: data.text, layout: :text
   # do |embed|

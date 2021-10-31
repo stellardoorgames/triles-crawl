@@ -1,23 +1,27 @@
 name:
-  x: 168
-  y: 150
-  width: 337
-  height: 37
-  font: Arial 8
-  align: left
+  x: 75
+  y: 56
+  width: 450
+  height: 56
+  font: Arial 10
+  align: center
   valign: middle
   color: white
   ellipsize: false
 
 image:
-  x: 337
-  y: 187
-  width: 187
-  height: 187
+  x: 225
+  y: 150
+  width: 225
+  height: 225
 
 text:
   extends: name
+  x: 150
   y: 375
+  width: 375
+  height: 37
+  font_size: 8
   align: center
   
 element_text:

@@ -12,7 +12,7 @@ desc 'Build everything, with all the options'
 task all: [:with_pnp, :with_tts, :with_proofs, :actions, :actions_back, :items, :skills, :equipment, :equipment_back, :classes]
 
 desc 'Build for Tabletop Simulator'
-task tts: [:with_tts, :actions, :actions_back, :items, :skills, :equipment, :equipment_back, :classes]
+task tts: [:with_tts, :actions, :actions_back, :items, :items_back, :skills, :equipment, :equipment_back, :classes]
 
 desc 'Build Equipment for TTS'
 task tts_equipment: [:with_tts, :equipment, :equipment_back]
@@ -23,16 +23,21 @@ task tts_classes: [:with_tts, :classes]
 desc 'Build Skill cards for TTS'
 task tts_skills: [:with_tts, :skills]
 
+desc 'Build Item cards for TTS'
+task tts_items: [:with_tts, :items, :items_back]
+
 desc 'Build the Actions deck'
 task(:actions)        { load 'src/actions.rb' }
 desc 'Build the Actions backs'
 task(:actions_back)   { load 'src/actions-back.rb' } 
 desc 'Build the Items deck'
 task(:items)          { load 'src/items.rb' }
+desc 'Build the Items backs'
+task(:items_back)     { load 'src/items-back.rb' }
 desc 'Build the Equipment deck'
 task(:equipment)      { load 'src/equipment.rb' }
 desc 'Build the Skills deck'
-task(:skills)          { load 'src/skills.rb' }
+task(:skills)         { load 'src/skills.rb' }
 desc 'Build the Equipment backs'
 task(:equipment_back) { load 'src/equipment-back.rb' }
 desc 'Build the Class cards'
