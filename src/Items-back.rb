@@ -14,7 +14,7 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
   svg file: data.back.map{ |s| if (s != nil) then s += ".svg" end }, width: width, height: height
 
 
-  text str: data.name, layout: :name
+  #text str: data.name, layout: :name
   
   text str: MySquibGame::VERSION, layout: :version
 
