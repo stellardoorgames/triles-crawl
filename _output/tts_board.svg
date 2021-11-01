@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8.875in" height="8.875in" viewBox="0 0 639 639">
+  <rect x="9" y="9" width="621" height="621" rx="9" fill="#998675" stroke="#000" stroke-miterlimit="10"/>
+  <g>
+    <rect x="18" y="18" width="144" height="144" rx="9" fill="#736357" stroke="#000" stroke-miterlimit="10"/>
+    <rect x="171" y="18" width="144" height="144" rx="9" fill="#736357" stroke="#000" stroke-miterlimit="10"/>
+    <rect x="324" y="18" width="144" height="144" rx="9" fill="#736357" stroke="#000" stroke-miterlimit="10"/>
+    <rect x="477" y="18" width="144" height="144" rx="9" fill="#736357" stroke="#000" stroke-miterlimit="10"/>
+    <rect x="18" y="171" width="144" height="144" rx="9" fill="#736357" stroke="#000" stroke-miterlimit="10"/>
+    <rect x="171" y="171" width="144" height="144" rx="9" fill="#736357" stroke="#000" stroke-miterlimit="10"/>
+    <rect x="324" y="171" width="144" height="144" rx="9" fill="#736357" stroke="#000" stroke-miterlimit="10"/>
+    <rect x="477" y="171" width="144" height="144" rx="9" fill="#736357" stroke="#000" stroke-miterlimit="10"/>
+    <rect x="18" y="324" width="144" height="144" rx="9" fill="#736357" stroke="#000" stroke-miterlimit="10"/>
+    <rect x="171" y="324" width="144" height="144" rx="9" fill="#736357" stroke="#000" stroke-miterlimit="10"/>
+    <rect x="324" y="324" width="144" height="144" rx="9" fill="#736357" stroke="#000" stroke-miterlimit="10"/>
+    <rect x="477" y="324" width="144" height="144" rx="9" fill="#736357" stroke="#000" stroke-miterlimit="10"/>
+    <rect x="18" y="477" width="144" height="144" rx="9" fill="#736357" stroke="#000" stroke-miterlimit="10"/>
+    <rect x="171" y="477" width="144" height="144" rx="9" fill="#736357" stroke="#000" stroke-miterlimit="10"/>
+    <rect x="324" y="477" width="144" height="144" rx="9" fill="#736357" stroke="#000" stroke-miterlimit="10"/>
+    <rect x="477" y="477" width="144" height="144" rx="9" fill="#736357" stroke="#000" stroke-miterlimit="10"/>
+  </g>
+</svg>
