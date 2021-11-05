@@ -9,12 +9,10 @@ height = '2 in'
 
 Squib::Deck.new(cards: data.nrows, width: width, height: height) do
   background color: :white
-  use_layout file: 'layouts/Items.yml'
+  use_layout file: 'layouts/items-back.yml'
 
-  svg file: data.back.map{ |s| if (s != nil) then s += ".svg" end }, width: width, height: height
-
-
-  #text str: data.name, layout: :name
+  svg file: data.back.map{ |s| if (s != nil) then s += ".svg" end }, layout: :back
+  svg file: data.back2.map{ |s| if (s != nil) then s += ".svg" end }, layout: :back2
   
   text str: MySquibGame::VERSION, layout: :version
 

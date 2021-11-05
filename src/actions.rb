@@ -37,13 +37,6 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
   svg file: data.luck.map{ |s| if (s != nil) then "die#{s}.svg" end }, layout: :luck
 
   
-  # Air Element
-  element = data.element.each_index.select { |i| data.element[i] == "Air"}
-  svg range:element, file:'air.svg', layout: :element
-  svg range:element, file:'metal.svg', layout: :se1
-  svg range:element, file:'fire.svg', layout: :se2
-  svg range:element, file:'lightning.svg', layout: :se3
-  svg range:element, file:'ice.svg', layout: :we1
   # Beast ELement
   element = data.element.each_index.select { |i| data.element[i] == "Beast"}
   svg range:element, file:'beast.svg', layout: :element
@@ -58,47 +51,22 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
   element = data.element.each_index.select { |i| data.element[i] == "Earth"}
   svg range:element, file:'earth.svg', layout: :element
   svg range:element, file:'plant.svg', layout: :se1
-  svg range:element, file:'water.svg', layout: :se2
-  svg range:element, file:'ice.svg', layout: :se3
-  svg range:element, file:'lightning.svg', layout: :we1
+  svg range:element, file:'spirit.svg', layout: :se2
+  svg range:element, file:'fire.svg', layout: :we1
+  svg range:element, file:'undead.svg', layout: :we2
   # Fire Element
   element = data.element.each_index.select { |i| data.element[i] == "Fire"}
   svg range:element, file:'fire.svg', layout: :element
-  svg range:element, file:'metal.svg', layout: :se1
+  svg range:element, file:'earth.svg', layout: :se1
   svg range:element, file:'demon.svg', layout: :se2
-  svg range:element, file:'ice.svg', layout: :se3
+  svg range:element, file:'water.svg', layout: :se3
   svg range:element, file:'beast.svg', layout: :we1
   svg range:element, file:'plant.svg', layout: :we2
-  svg range:element, file:'air.svg', layout: :we3
-  # Ice Element
-  element = data.element.each_index.select { |i| data.element[i] == "Ice"}
-  svg range:element, file:'ice.svg', layout: :element
-  svg range:element, file:'air.svg', layout: :se1
-  svg range:element, file:'earth.svg', layout: :we1
-  svg range:element, file:'plant.svg', layout: :we2
-  svg range:element, file:'fire.svg', layout: :we3
-  # Lightning Element
-  element = data.element.each_index.select { |i| data.element[i] == "Lightning"}
-  svg range:element, file:'lightning.svg', layout: :element
-  svg range:element, file:'earth.svg', layout: :se1
-  svg range:element, file:'metal.svg', layout: :we1
-  svg range:element, file:'water.svg', layout: :we2
-  svg range:element, file:'air.svg', layout: :we3
-  # Metal Element
-  element = data.element.each_index.select { |i| data.element[i] == "Metal"}
-  svg range:element, file:'metal.svg', layout: :element
-  svg range:element, file:'water.svg', layout: :se1
-  svg range:element, file:'lightning.svg', layout: :se2
-  svg range:element, file:'spirit.svg', layout: :se3
-  svg range:element, file:'fire.svg', layout: :we1
-  svg range:element, file:'air.svg', layout: :we2
-  svg range:element, file:'undead.svg', layout: :we3
   # Plant Element
   element = data.element.each_index.select { |i| data.element[i] == "Plant"}
   svg range:element, file:'plant.svg', layout: :element
   svg range:element, file:'fire.svg', layout: :se1
-  svg range:element, file:'ice.svg', layout: :se2
-  svg range:element, file:'undead.svg', layout: :se3
+  svg range:element, file:'undead.svg', layout: :se2
   svg range:element, file:'water.svg', layout: :we1
   svg range:element, file:'earth.svg', layout: :we2
   svg range:element, file:'spirit.svg', layout: :we3
@@ -106,21 +74,19 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
   element = data.element.each_index.select { |i| data.element[i] == "Spirit"}
   svg range:element, file:'spirit.svg', layout: :element
   svg range:element, file:'plant.svg', layout: :se1
-  svg range:element, file:'metal.svg', layout: :we1
+  svg range:element, file:'earth.svg', layout: :we1
   # undead ELement
   element = data.element.each_index.select { |i| data.element[i] == "Undead"}
   svg range:element, file:'undead.svg', layout: :element
-  svg range:element, file:'metal.svg', layout: :se1
+  svg range:element, file:'earth.svg', layout: :se1
   svg range:element, file:'plant.svg', layout: :we1
   # Water Element
   element = data.element.each_index.select { |i| data.element[i] == "Water"}
   svg range:element, file:'water.svg', layout: :element
   svg range:element, file:'plant.svg', layout: :se1
-  svg range:element, file:'lightning.svg', layout: :se2
-  svg range:element, file:'beast.svg', layout: :se3
-  svg range:element, file:'earth.svg', layout: :we1
-  svg range:element, file:'metal.svg', layout: :we2
-  svg range:element, file:'beast.svg', layout: :we3
+  svg range:element, file:'beast.svg', layout: :se2
+  svg range:element, file:'demon.svg', layout: :we1
+  svg range:element, file:'fire.svg', layout: :we2
   
   text str: data.element.map { |s| s  = "- " + s}, layout: :element_text
 
