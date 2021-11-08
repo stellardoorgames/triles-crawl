@@ -29,12 +29,6 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
 	embed.svg key: '[int]',   file: 'img/int.svg',       layout: :embedded_small
 	embed.svg key: '[per]',   file: 'img/per.svg',       layout: :embedded_small
 	embed.svg key: '[vit]',   file: 'img/vit.svg',       layout: :embedded_small
-	embed.svg key: '[stri]',  file: 'img/stri.svg',      layout: :embedded_small
-	embed.svg key: '[dexi]',  file: 'img/dexi.svg',      layout: :embedded_small
-	embed.svg key: '[agli]',  file: 'img/agli.svg',      layout: :embedded_small
-	embed.svg key: '[inti]',  file: 'img/inti.svg',      layout: :embedded_small
-	embed.svg key: '[peri]',  file: 'img/peri.svg',      layout: :embedded_small
-	embed.svg key: '[viti]',  file: 'img/viti.svg',      layout: :embedded_small
 	embed.svg key: '[A]',     file: 'img/air.svg',       layout: :embedded_small
 	embed.svg key: '[E]',     file: 'img/earth.svg',     layout: :embedded_small
 	embed.svg key: '[P]',     file: 'img/plant.svg',     layout: :embedded_small
@@ -59,12 +53,6 @@ Squib::Deck.new(cards: data.nrows, width: width, height: height) do
 	embed.svg key: '[int]',   file: 'img/int.svg',       layout: :embedded_xsmall
 	embed.svg key: '[per]',   file: 'img/per.svg',       layout: :embedded_xsmall
 	embed.svg key: '[vit]',   file: 'img/vit.svg',       layout: :embedded_xsmall
-	embed.svg key: '[stri]',  file: 'img/stri.svg',      layout: :embedded_xsmall
-	embed.svg key: '[dexi]',  file: 'img/dexi.svg',      layout: :embedded_xsmall
-	embed.svg key: '[agli]',  file: 'img/agli.svg',      layout: :embedded_xsmall
-	embed.svg key: '[inti]',  file: 'img/inti.svg',      layout: :embedded_xsmall
-	embed.svg key: '[peri]',  file: 'img/peri.svg',      layout: :embedded_xsmall
-	embed.svg key: '[viti]',  file: 'img/viti.svg',      layout: :embedded_xsmall
 	embed.svg key: '[A]',     file: 'img/air.svg',       layout: :embedded_xsmall
 	embed.svg key: '[E]',     file: 'img/earth.svg',     layout: :embedded_xsmall
 	embed.svg key: '[P]',     file: 'img/plant.svg',     layout: :embedded_xsmall

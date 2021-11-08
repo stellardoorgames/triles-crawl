@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8in" height="8in" viewBox="0 0 576 576">
+  <defs>
+    <symbol id="a" data-name="Grid" viewBox="0 0 112 112">
+      <g>
+        <rect x="2.5" y="2.5" width="107" height="107" fill="#fff"/>
+        <path d="M107,5V107H5V5H107m5-5H0V112H112V0Z"/>
+      </g>
+    </symbol>
+    <symbol id="e" data-name="In Range" viewBox="0 0 112 112">
+      <g>
+        <rect x="2.5" y="2.5" width="107" height="107" fill="#939598"/>
+        <path d="M107,5V107H5V5H107m5-5H0V112H112V0Z"/>
+      </g>
+    </symbol>
+  </defs>
+  <rect x="18" y="18" width="540" height="540" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+  <g>
+    <use width="112" height="112" transform="translate(234 450) scale(0.964)" xlink:href="#a"/>
+    <use width="112" height="112" transform="translate(342 450) scale(0.964)" xlink:href="#a"/>
+    <use width="112" height="112" transform="translate(450 450) scale(0.964)" xlink:href="#a"/>
+    <use width="112" height="112" transform="translate(126 450) scale(0.964 0.964)" xlink:href="#a"/>
+    <use width="112" height="112" transform="translate(234 342) scale(0.964)" xlink:href="#e"/>
+    <use width="112" height="112" transform="translate(342 342) scale(0.964)" xlink:href="#a"/>
+    <use width="112" height="112" transform="translate(126 342) scale(0.964 0.964)" xlink:href="#a"/>
+    <use width="112" height="112" transform="translate(18 450) scale(0.964)" xlink:href="#a"/>
+    <use width="112" height="112" transform="translate(450 342) scale(0.964)" xlink:href="#a"/>
+    <use width="112" height="112" transform="translate(18 342) scale(0.964)" xlink:href="#a"/>
+    <use width="112" height="112" transform="translate(234 234) scale(0.964)" xlink:href="#e"/>
+    <use width="112" height="112" transform="translate(342 234) scale(0.964)" xlink:href="#e"/>
+    <use width="112" height="112" transform="translate(450 234) scale(0.964)" xlink:href="#a"/>
+    <use width="112" height="112" transform="translate(126 234) scale(0.964 0.964)" xlink:href="#e"/>
+    <use width="112" height="112" transform="translate(18 234) scale(0.964)" xlink:href="#a"/>
+    <use width="112" height="112" transform="translate(234 126) scale(0.964)" xlink:href="#e"/>
+    <use width="112" height="112" transform="translate(342 126) scale(0.964)" xlink:href="#a"/>
+    <use width="112" height="112" transform="translate(450 126) scale(0.964)" xlink:href="#a"/>
+    <use width="112" height="112" transform="translate(126 126) scale(0.964 0.964)" xlink:href="#a"/>
+    <use width="112" height="112" transform="translate(18 126) scale(0.964)" xlink:href="#a"/>
+    <use width="112" height="112" transform="translate(234 18) scale(0.964)" xlink:href="#a"/>
+    <use width="112" height="112" transform="translate(342 18) scale(0.964)" xlink:href="#a"/>
+    <use width="112" height="112" transform="translate(450 18) scale(0.964)" xlink:href="#a"/>
+    <use width="112" height="112" transform="translate(126 18) scale(0.964 0.964)" xlink:href="#a"/>
+    <use width="112" height="112" transform="translate(18 18) scale(0.964)" xlink:href="#a"/>
+  </g>
+</svg>
